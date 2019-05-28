@@ -67,7 +67,7 @@
                                     aria-label="Search"
                                     aria-describedby="basic-addon2">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button">
+                                    <button class="btn btn-success" type="button">
                                         <i class="fas fa-search fa-sm"></i>
                                     </button>
                                 </div>

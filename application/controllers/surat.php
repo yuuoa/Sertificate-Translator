@@ -11,11 +11,11 @@ class surat extends CI_Controller
         $data['nim'] = $this->session->nim;
         $data['mahasiswa'] = $this->Model->getProfile($username);
 
-        $this->load->view('user/surat', $data);
+        $this->load->view('user/sertificate', $data);
     }
 
     public function cetak()
     {
-        $this->load->view('user/surat');
+        $this->load->view('user/sertificate');
     }
 }

@@ -33,10 +33,46 @@ class User extends CI_Controller
         $this->db->from('ijazah as ij, mahasiswa mh ');
         $this->db->where('ij.nim', $this->session->nim);
         $query = $this->db->get();
-        $data['IJAZAH'] = $query->result();
-        $data['MAHASISWA'] = $this->db->get('mahasiswa')->result();
-        $data['JURUSAN'] = $this->db->get('jurusan')->result();
-        
-        $this->load->view('user/sertificate',$data);
+
+        $sql1 = $this->db->select()->from('ijazah');
+        $sql2 = $sql1->join('mahasiswa', 'ijazah.nim = mahasiswa.nim');
+        $sql3 = $sql2->join('jurusan', 'mahasiswa.id_jurusan = jurusan.kode');
+        $sql4 = $sql3->where(["mahasiswa.nim"=>$this->session->nim]);
+        $sql5 = $sql4->get()->row();
+
+        switch ($sql5->nama_jurusan) {
+            case "TEKNIK INFORMATIKA":
+                $data['gelar'] =  "SARJANA TEKNIK (ST)"; 
+                $data['nama_jurusan'] =  "Informatics Engineering";
+                break;
+            case "TEKNIK ELEKTRO":
+                $data['gelar'] =  "SARJANA TEKNIK (ST)";
+                $data['nama_jurusan'] =  "Electrical Engineering";
+                break;
+            case "AGROTEKNOLOGI":
+                $data['gelar'] =  "SARJANA TEKNIK (ST)"; 
+                $data['nama_jurusan'] =  "Argotechnology";
+                break;
+            case "MATEMATIKA":
+                $data['gelar'] =  "SARJANA SAINS (S.Si)";
+                $data['nama_jurusan'] =  "Mathematics"; 
+                break;
+            case "FISIKA":
+                $data['gelar'] =  "SARJANA SAINS (S.Si)";
+                $data['nama_jurusan'] =  "Physics";
+                break;
+            case "KIMIA":
+                $data['gelar'] =  "SARJANA SAINS (S.Si)";
+                $data['nama_jurusan'] =  "Chemistry";
+                break;
+            case "BIOLOGI":
+                $data['gelar'] =  "SARJANA SAINS (S.Si)";
+                $data['nama_jurusan'] =  "Biology";
+                break;
+        }
+
+        $data['mhs'] = $sql5;
+       
+        $this->load->view('user/surat',$data);
     }
 }

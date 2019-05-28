@@ -12,7 +12,7 @@
             <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Data Mahasiswa</h6>
+                    <h6 class="m-0 font-weight-bold text-success">Data Mahasiswa</h6>
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
@@ -34,10 +34,10 @@
                                         <td><?= $i++; ?></td>
                                         <td><?= $m->nim; ?></td>
                                         <td><?= $m->nama; ?></td>
-                                        <td><?= $m->jurusan; ?></td>
+                                        <td><?= $m->nama_jurusan; ?></td>
                                         <?php
                                         if ($m->status == 1) {
-                                            echo '<td align="center"><a href="'.base_url("admin/setRequest/").$m->nim.'" class="btn btn-primary">terima</a></td>';
+                                            echo '<td align="center"><a href="'.base_url("admin/setRequest/").$m->nim.'" class="btn btn-success">terima</a></td>';
                                         } else if ($m->status == 2) {
                                             echo '<td align="center"><a href="" class="btn btn-secondary" disabled>telah diterima</a></td>';
                                         }

@@ -19,32 +19,24 @@
         <div class="card-body">
           <div class="chart-area">
             <div class="row">
-              <div class="col-md-8 mt-3">
-              </div>
-              <div class="col-md-8">
+              <div class="col-md-4">
                 <div>
-                  <h4 class="text-primary font-weight-bold">Nomor Induk</h4>
+                  <h4 class="text-primary font-weight-bold">Student Number</h4>
                 </div>
                 <div class="mt-3">
                   <?= $mahasiswa->nim; ?>
                 </div>
                 <div class="mt-3">
-                  <h4 class="text-primary font-weight-bold">Nama</h4>
+                  <h4 class="text-primary font-weight-bold">Name</h4>
                 </div>
                 <div>
                   <?= $mahasiswa->nama; ?>
                 </div>
                 <div class="mt-3">
-                  <h4 class="text-primary font-weight-bold">Jenis Kelamin</h4>
+                  <h4 class="text-primary font-weight-bold">Program</h4>
                 </div>
                 <div>
-                  <?= $mahasiswa->jk; ?>
-                </div>
-                <div class="mt-3">
-                  <h4 class="text-primary font-weight-bold">Jurusan</h4>
-                </div>
-                <div>
-                  <?= $mahasiswa->jurusan; ?>
+                  <?= $mahasiswa->nama_jurusan; ?>
                 </div>
               </div>
               <div class="col-md-4"></div>

@@ -8,7 +8,7 @@ class Model extends CI_Model
     }
 
     function getProfile($id){
-        $this->db->select('m.nama as nama, m.nim as nim, m.jk as jk, j.nama as jurusan, u.username as username, m.status');
+        $this->db->select('m.nama as nama, m.nim as nim, m.jk as jk, j.nama_jurusan, u.username as username, m.status');
         $this->db->from('jurusan as j');
         $this->db->from('mahasiswa as m');
         $this->db->from('akun as u');
@@ -50,7 +50,7 @@ class Model extends CI_Model
         $this->db->select('m.nama as nama');
         $this->db->select('m.nim as nim');
         $this->db->select('m.jk as jk');
-        $this->db->select('j.nama as jurusan');
+        $this->db->select('j.nama_jurusan');
         $this->db->select('i.tahun_lulus as tahun');
         $this->db->select('m.status as status');
         

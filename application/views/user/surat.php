@@ -7,6 +7,7 @@
     <meta name=Originator content="Microsoft Word 14">
     <title></title>
 
+
     <style>
         @font-face {
             font-family: "Times New Roman";
@@ -123,6 +124,7 @@
 
     <!--StartFragment-->
 
+    <!--StartFragment-->
     <div class="Section0" style="layout-grid:18,0000pt;">
 
         <table class=MsoTableGrid border=0 cellspacing=0 style="border-collapse:collapse;width:996,0000pt;margin-left:6,7500pt;margin-right:6,7500pt;mso-table-layout-alt:fixed;border:none;mso-border-insideh:0,5000pt solid windowtext;mso-padding-alt:0,0000pt 5,4000pt 0,0000pt 5,4000pt ;">
@@ -130,16 +132,17 @@
             <tr style="height:13,7000pt;">
                 <td width=664 valign=top style="width:498,0000pt;padding:0,0000pt 5,4000pt 0,0000pt 5,4000pt ;border-left:none;border-right:none;border-top:none;border-bottom:none;">
                     <p class=MsoNormal align=justify style="mso-pagination:none;text-align:justify;text-justify:inter-ideograph;">
-                        <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;">NUMBER: Un.</span>
+                        <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;">NUMBER: Un.07/<?= $mhs->no_ijazah ?></span>
                         <span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;">
                             <o:p></o:p>
                         </span>
                     </p>
                 </td>
-                <br>
+                <td id="tdi" align=justify style="text-align:center;">
+                </td>
                 <td width=664 valign=top style="width:498,0000pt;padding:0,0000pt 5,4000pt 0,0000pt 5,4000pt ;border-left:none;border-right:none;border-top:none;border-bottom:none;">
                     <p class=MsoNormal align=right style="mso-pagination:none;text-align:right;">
-                        <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;">NUMBER: FST/</span>
+                        <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;">NUMBER: FST/S1/0/2021</span>
                         <span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;">
                             <o:p></o:p>
                         </span>
@@ -153,30 +156,7 @@
                 <o:p>&nbsp;</o:p>
             </span>
         </p>
-        <p class=MsoNormal>
-            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;">
-                <o:p>&nbsp;</o:p>
-            </span>
-        </p>
-        <p class=MsoNormal>
-            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;">
-                <o:p>&nbsp;</o:p>
-            </span>
-        </p>
-        <p class=MsoNormal>
-            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;">
-                <o:p>&nbsp;</o:p>
-            </span>
-        </p>
-        <p class=MsoNormal>
-            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;">
-                <o:p>&nbsp;</o:p>
-            </span></p>
-        <p class=MsoNormal>
-            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;">
-                <o:p>&nbsp;</o:p>
-            </span>
-        </p>
+
         <p class=MsoNormal>
             <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;">
                 <o:p>&nbsp;</o:p>
@@ -184,6 +164,7 @@
         </p>
 
         <p class=MsoNormal align=center style="text-align:center;">
+        <br><br><br><br><br><br>
             <b>
                 <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:bold;font-size:12,0000pt;">MINISTRY OF RELIGIOUS AFFAIRS</span>
             </b>
@@ -229,30 +210,31 @@
             </b>
         </p>
         <p class=MsoNormal align=center style="text-align:center;line-height:150%;">
-            <b>
-                <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:bold;font-size:12,0000pt;"><?= $mhs->nama ?></span>
-            </b>
-            <b>
-                <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:bold;font-size:12,0000pt;">
-                    <o:p></o:p>
-                </span>
-            </b>
+
+            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+            font-weight:normal;font-size:10,5000pt;"><?= strtoupper($mhs->nama) ?></span>
+            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">
+                <o:p></o:p>
+            </span>
         </p>
         <p class=MsoNormal align=center style="text-align:center;line-height:150%;">
-            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">Student ID Number <?= $mhs->nim ?></span>
+
+            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">STUDENT ID NUMBER : <?= $mhs->nim ?></span>
             <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">
                 <o:p></o:p>
             </span>
         </p>
         <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;">
-            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">Born in <?= $mhs->tempat_lahir ?>, <?= $mhs->tanggal_lahir ?>, hasi finished and fulfilled all the requirement at Study Program of <?= $mhs->id_jurusan ?>, therefore the University has confirmed upon &#60;MAHASISWA_JK&#62; the degree of:</span>
-            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">
-                <o:p></o:p>
-            </span>
+            <br>
+            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:12,5000pt;">Born in <?= $mhs->tempat_lahir ?>, <?= $mhs->tanggal_lahir ?>, has finished and fulfilled all the resquirement at Study Program of <?= $nama_jurusan ?>, therefore the University has conffered upon his the degree of :
+                <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">
+                    <o:p></o:p>
+                </span>
         </p>
         <p class=MsoNormal align=center style="text-align:center;line-height:150%;">
             <b>
-                <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:bold;font-size:16,0000pt;">&#60;JURUSAN_GELAR&#62;</span>
+                <br>
+                <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:bold;font-size:16,0000pt;"><?= $gelar ?></span>
             </b>
             <b>
                 <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:bold;font-size:16,0000pt;">
@@ -261,13 +243,14 @@
             </b>
         </p>
         <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;line-height:150%;">
-            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">Along with rights and obligations attached to the degree,</span>
+            <br>
+            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">Along with rights and obligations attached to the degree. </span>
             <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">
                 <o:p></o:p>
             </span>
         </p>
         <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;line-height:150%;">
-            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">Given in Bandung, &#60;LULUS_IJAZAHTANGGAL&#62;.</span>
+            <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">Given in Bandung, <?= $mhs->tanggal_ijazah ?>.</span>
             <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">
                 <o:p></o:p>
             </span>
@@ -276,6 +259,8 @@
             <tr style="height:90,2500pt;">
                 <td width=439 valign=top style="width:329,6000pt;padding:0,0000pt 5,4000pt 0,0000pt 5,4000pt ;border-left:none;border-right:none;border-top:none;border-bottom:none;">
                     <p class=MsoNormal align=center style="mso-pagination:none;text-align:center;">
+                        <br>
+                        <br>
                         <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">DEAN,</span>
                         <span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">
                             <o:p></o:p>
@@ -328,6 +313,7 @@
                 </td>
                 <td width=439 valign=top style="width:329,7000pt;padding:0,0000pt 5,4000pt 0,0000pt 5,4000pt ;border-left:none;border-right:none;border-top:none;border-bottom:none;">
                     <p class=MsoNormal align=center style="mso-pagination:none;text-align:center;">
+                        <br>
                         <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">Rector,</span>
                         <span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">
                             <o:p></o:p>
@@ -381,7 +367,7 @@
                 </td>
                 <td width=439 valign=top style="width:329,7000pt;padding:0,0000pt 5,4000pt 0,0000pt 5,4000pt ;border-left:none;border-right:none;border-top:none;border-bottom:none;">
                     <p class=MsoNormal align=center style="mso-pagination:none;text-align:center;">
-                        <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">Date: &#60;LULUS_LULUSTANGGAL&#62;</span>
+                        <span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">Date: <?= $mhs->tahun_lulus ?></span>
                         <span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;font-weight:normal;font-size:10,5000pt;">
                             <o:p></o:p>
                         </span>
@@ -462,7 +448,7 @@
         </p>
     </div>
     <script>
-        //window.print();
+        window.print();
     </script>
 </body>
 
