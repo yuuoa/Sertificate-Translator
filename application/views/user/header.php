@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?= $title ?> - User</title>
+    <title>FST Penerjemahan Ijazah</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url('assets/') ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -20,7 +20,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="bg-gradient-primary">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -32,31 +32,16 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top ">
                     <ul class="navbar-nav">
 
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item mx-1">
                             <div class="sidebar-brand-text text-primary mt-2">
-                                <h5>Sistem Translasi Ijazah</h5>
+                                <h5>FST Penerjemahan Ijazah</h5>
                             </div>
                         </li>
-
-                        <div class="topbar-divider d-none d-sm-block"></div>
-
                     </ul>
-
-                    <!-- Topbar Search -->
-                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -66,21 +51,14 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $nama; ?></span>
-                                <img class="img-profile rounded-circle" src="https://source.unsplash.com/admin/60x60">
+                                <span class="mr-2 d-none d-lg-inline text-primary small"><?= $nama; ?></span>
                             </a>
                             <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <div class="dropdown-menu dropdown-menu-right animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
-                <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->

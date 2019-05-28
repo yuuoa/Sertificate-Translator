@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="bg-gradient-success">
+<body class="bg-gradient-primary">
 
     <div class="container">
 

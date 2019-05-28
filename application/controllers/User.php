@@ -7,12 +7,12 @@ class User extends CI_Controller
     {
         $username = $this->session->username;
         $data['nama'] = $this->session->nama;
-        $data['title'] = 'Sistem Translasi Ijazah';
         $data['nim'] = $this->session->nim;
         $data['mahasiswa'] = $this->Model->getProfile($username);
+        
 
         $this->load->view('user/header', $data);
-        $this->load->view('user/index');
+        $this->load->view('user/index', $data);
         $this->load->view('user/footer');
     }
 
