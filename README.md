@@ -1,6 +1,6 @@
 UAS Praktikum RPL
 
-FST Penerjemahan Ijazah
+**FST Penerjemahan Ijazah**
 =======================
 
 ini adalah aplikasi untuk menerjemahkan ijazah dengan berbasis web dan aplikasi ini masih bersifat beta.
@@ -11,7 +11,7 @@ import file database.sql kedalam database local.
 setelah itu buka tautan "localhost/Sertificate-Translator" dalam browser.
 
 anggota kelompok:
-1177050066 - Muhammad Alwan Andika
-1177050082 - Nurul Dwi Cahya
+- 1177050066 - Muhammad Alwan Andika
+- 1177050082 - Nurul Dwi Cahya
 
 Praktikum Rekayasa Perangkat Lunak - D
